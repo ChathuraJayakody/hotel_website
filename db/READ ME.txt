@@ -1,0 +1,87 @@
+CREATE TABLE day_out_bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(55),
+  email VARCHAR(55),
+  nic VARCHAR(55),
+  date DATE,
+  guests INT,
+  payment_option VARCHAR(55),
+  guide VARCHAR(55),
+  phone_number VARCHAR(55)
+);
+
+CREATE TABLE guides (
+  id INT,
+  name VARCHAR(55),
+  experience VARCHAR(55),
+  languages VARCHAR(55),
+  rating INT
+);
+
+INSERT INTO guides (id, name, experience, languages, rating) VALUES
+(1, 'John Doe', '10', 'English, Spanish', 5),
+(2, 'Jane Smith', '7', 'French, English', 4),
+(3, 'Ahmed Khan', '5', 'Arabic, English', 4),
+(4, 'Maria Garcia', '8', 'Spanish, English', 5),
+(5, 'Ling Wei', '6', 'Chinese, English', 4),
+(6, 'Sophie Martin', '9', 'English, German', 5);
+
+CREATE TABLE instructors (
+  instructor_id INT,
+  instructor_name VARCHAR(55),
+  phone_number VARCHAR(55),
+  language VARCHAR(55)
+);
+
+INSERT INTO instructors (instructor_id, instructor_name, phone_number, language) VALUES
+(1, 'John Smith', '0788883540', 'English'),
+(2, 'Maria Garcia', '0781101039', 'Tamil'),
+(3, 'Hiroshi Tanaka', '0788123515', 'Sinhala'),
+(4, 'Aisha Khan', '0781775059', 'Chinese'),
+(5, 'Pierre Dubois', '0781081871', 'French'),
+(6, 'Chen Wei', '0783998461', 'English');
+
+CREATE TABLE pool_party_bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(55),
+  email VARCHAR(55),
+  nic VARCHAR(55),
+  event_date DATE,
+  guests INT,
+  payment_option VARCHAR(55),
+  additional_requirements TEXT
+);
+
+CREATE TABLE room_bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(55),
+  email VARCHAR(55),
+  nic VARCHAR(55),
+  checkin_date DATE,
+  checkout_date DATE,
+  guests INT,
+  room_type VARCHAR(55),
+  payment_option VARCHAR(55)
+);
+
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    nic VARCHAR(12) NOT NULL UNIQUE,
+    phone_number VARCHAR(15),
+    password VARCHAR(255) NOT NULL,
+    feedback TEXT
+);
+
+CREATE TABLE wedding_bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(55) NOT NULL,
+  email VARCHAR(55) NOT NULL,
+  nic VARCHAR(55) NOT NULL,
+  wedding_date DATE NOT NULL,
+  guests INT NOT NULL,
+  additional_arrangements TEXT,
+  menu_preference TEXT,
+  payment_option VARCHAR(55) NOT NULL
+);

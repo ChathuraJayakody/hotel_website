@@ -1,0 +1,117 @@
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 43, 54, 0.7); 
+    color: rgb(31, 27, 27);
+    padding: 10px 20px; /* Reduced padding to decrease header height */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Reduced height */
+    margin-right: 10px;
+    filter: hue-rotate(90deg) saturate(100%) brightness(80%);
+}
+
+/* Style for the h1 with class sofia-regular */
+.sofia-regular {
+    color: #ccd6cd; /* Example color */
+    font-size: 1.2rem; /* Reduced font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+   
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 10px; /* Reduced margin between items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Reduced font size */
+    padding: 5px 10px; /* Reduced padding */
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #C1D8C3;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #002b36;
+    color: white;
+    padding: 20px 20px; /* Reduced padding */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-content h3 {
+    color: #93a1a1;
+    margin-bottom: 10px;
+}
+
+.footer-content p, .footer-content iframe {
+    color: #eee8d5;
+}
+
+.footer-bottom {
+    border-top: 1px solid #586e75;
+    margin-top: 10px; /* Reduced margin */
+    padding-top: 10px;
+}
+
+.bg-map1, .bg-tp, .bg-mail {
+    width: 30px; /* Reduced size */
+    height: 30px; /* Reduced size */
+    border-radius: 50%; /* Changed from square to circle */
+}
+
+.bg-map1 {
+    background: url('css_sprites.PNG') -8px -8px no-repeat;
+}
+
+.bg-tp {
+    background: url('css_sprites.PNG') -64px -8px no-repeat;
+}
+
+.bg-mail {
+    background: url('css_sprites.PNG') -120px -8px no-repeat;
+}
