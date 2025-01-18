@@ -25,7 +25,6 @@ HOTEL_WEBSITE/
 |   |-- READ ME.txt   # Queries and notes related to the database
 |
 |-- about.php         # About Us page
-|-- cancel_booking.php # Cancel booking functionality
 |-- dayout.php        # Day Out service page
 |-- gallery1.php      # Gallery page for hotel visuals
 |-- get_guides.php    # Fetch and display guides
