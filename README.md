@@ -12,7 +12,7 @@ Below is the project structure:
 HOTEL_WEBSITE/
 |-- assets/
 |   |-- images/       # Contains all image assets used in the website
-|   |-- videos/       # Contains video assets (if any)
+|   |-- videos/       # Contains video assets 
 |
 |-- css/
 |   |-- myprofile.css # Styling for the user profile page
